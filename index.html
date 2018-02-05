@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>Effective JavaScript: Frogger</title>
+			<link rel="stylesheet" href="css/style.css">
+				<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+				</head>
+				<body>
+					<div class='test' id='test1'>
+						<audio id="audio" >
+							<source src="audio/background.ogg" type="audio/mpeg">
+                            Your browser does not support this audio format.
+							</audio>
+							<h1>Saltoh Frogger Game</h1>
+							<ul style="list-style-image: url('images/hamdeat.png'); line-height: 200%;">
+								<li>Saltoh is a little boy wants to catch his cats and balls, but the road is dangerous be careful.</li>
+								<li> help Saltoh to achieve his goal, use the keyboard arrows to move Saltoh</li>
+								<li>each time you help Saltoh catch cat or ball the score will increase</li>
+							</ul>
+							<button  type="button"  id="volume-button" onclick='toggleSound()' style="background-color: Transparent; border: none; cursor:pointer;overflow: hidden;">
+								<img id="button-img" src="images/volume-on.png"/>
+								<span style="text-align: center; margin-left: 10px; font-size: 20px; margin-bottom: 10px;">music</span>
+							</button>
+							<button  type="button"  id="start-button" onclick='' style="background-color: Transparent; border: none; cursor:pointer;overflow: hidden;">
+								<img  src="images/start-button.png"/>
+								<span style="text-align: center; margin-left: 10px; font-size: 20px; margin-bottom: 10px;">replay</span>
+							</button>
+							<div class='counter-area'>
+								<img  src="images/clock.png"/> Time Remaining:
+								<h1 id='counter'>30</h1>
+							</div>
+						</div>
+						<fotter>this game inspired by 
+							<a target="_blank" href="https://www.youtube.com/watch?v=h-LRsfYBpmM&list=PLd1T82Q8nvV_sKYC-dTyW3UbYhIO5eynY">Msamer</a>
+						</fotter>
+						<script src="js/resources.js"></script>
+						<script src="js/app.js"></script>
+						<script src="js/engine.js"></script>
+					</body>
+				</html>
